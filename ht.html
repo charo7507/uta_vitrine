@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .main{
+            width: 500px;
+            height: 500px;
+            box-shadow: 0 8px 24px hsla(228, 66%, 45%, .15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;   
+        }
+
+        .title{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .subtitle{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .links{
+            background: green;
+            padding: 14px 38px;
+            border-radius: .5rem;
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        
+        .links:hover{
+            background: lightgreen;
+ 
+        }
+
+        @media screen and (max-width: 664px) {
+            .title{
+            font-size: 1.5rem;
+        }
+
+        .subtitle{
+            font-size: 2rem;
+        }
+        }
+
+        @media screen and (max-width: 404px) {
+            .title{
+            font-size: 1rem;
+        }
+
+        .subtitle{
+            font-size: 1.5rem;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="main">
+        <h2 class="title">
+            Succes
+        </h2>
+        <h1 class="subtitle">
+          Appel effectuer avec succes
+        </h1>
+        <a href="" class="links">ok</a>
+    </main>
+
+</body>
+
+</html>
