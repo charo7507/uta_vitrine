@@ -7,15 +7,15 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(228, 66%, 53%);
-  --first-color-alt: hsl(228, 66%, 47%);
-  --first-color-light: hsl(228, 62%, 59%);
-  --first-color-lighten: hsl(228, 100%, 97%);
+  --first-color: hsl(115, 66%, 53%);
+  --first-color-alt: hsl(143, 66%, 47%);
+  --first-color-light: hsl(0, 0%, 0%);
+  --first-color-lighten: hsl(0, 7%, 89%);
   --second-color: hsl(25, 83%, 53%);
   --title-color: hsl(228, 57%, 28%);
   --text-color: hsl(228, 15%, 50%);
   --text-color-light: hsl(228, 12%, 75%);
-  --border-color: hsl(228, 99%, 98%);
+  --border-color: hsl(0, 0%, 0%);
   --body-color: #fff;
   --container-color: #fff;
 
@@ -194,6 +194,7 @@ button {
     right: 0;
     margin: 0 auto;
     padding: 1.30rem 3rem;
+    border-radius: 1rem;
   }
 
 
@@ -237,9 +238,7 @@ button {
 
 
 .home {
-  background: linear-gradient(170deg,
-      hsl(0, 9%, 22%) 0%,
-      hsl(0, 9%, 6%) 30%);
+background-color: rgb(100, 145, 33);
   padding-bottom: 0;
 }
 
@@ -336,6 +335,11 @@ button {
   display: inline-flex;
   align-items: flex-end;
   bottom: -1.5rem;
+}
+
+.home__img img{
+ height: 100%;
+ object-fit: cover;
 }
 
 
@@ -476,6 +480,11 @@ button {
   margin: auto;
 }
 
+.value__img img{
+height: 100%;
+object-fit: cover;
+}
+
 .value__description {
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
@@ -568,6 +577,11 @@ button {
   overflow: hidden;
   inset: 0;
   margin: auto;
+}
+
+.contact__img img{
+ height: 100%;
+ object-fit: cover;
 }
 
 .contact__description {
@@ -754,7 +768,8 @@ button {
 }
 
 .act {
-  background-color: red;
+  background-color: var(--first-color);
+  border-radius: .5rem;
 }
 
 /*=============== SCROLL BAR ===============*/
