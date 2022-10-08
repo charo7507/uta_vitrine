@@ -118,6 +118,7 @@ sr.reveal(`.home__images`, {delay: 800, origin:'bottom'})
 sr.reveal(`.logos__img`, {interval: 200})
 sr.reveal(`.value__images, .contact__content`, {origin:'left'})
 sr.reveal(`.value__content, .contact__images`, {origin:'right'})
+sr.reveal(`.cards__content`, {interval: 200})
 
 
 

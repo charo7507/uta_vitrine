@@ -555,6 +555,32 @@ object-fit: cover;
 /*Rotate icon and add shadows*/
 
 
+/*=============== CARDS ===============*/
+
+.cards__content{
+grid-template-columns: repeat(3, 1fr);
+gap: 1.25rem .75rem;
+}
+
+.card__items{
+background-color: var(--body-color);
+border: 2px solid var(--border-color);
+padding: 1.25rem .75rem;
+border-radius: .5rem;
+transition: .3s;
+}
+
+.card__icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.card__icon i{
+  font-size: 2rem;
+}
+
 /*=============== CONTACT ===============*/
 
 .contact__container {
@@ -821,6 +847,14 @@ object-fit: cover;
     grid-template-columns: repeat(1, 200px);
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 498px) {
+ 
+  .cards__content{
+    grid-template-columns: repeat(1, 200px);
+    justify-content: center;
+    }   
 }
 
 @media screen and (max-width: 320px) {
